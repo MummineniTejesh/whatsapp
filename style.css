@@ -8,9 +8,12 @@ body{
   }
    
   /* Handle */
-  ::-webkit-scrollbar-thumb {
+::-webkit-scrollbar-thumb {
     background: #ced0d1; 
-  }
+}
+#alert{
+    display:none;
+}
 #header{
     position:fixed;
     top:0%;
@@ -22,6 +25,14 @@ body{
     left:0px;
     display:flex;
     flex-direction:row;
+}
+@media (max-width: 500px){
+    #header {
+      display: none;
+    }
+    #alert{
+        display:flex;
+    }
 }
 #chatsidebar{
     flex-basis:35%;

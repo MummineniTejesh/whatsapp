@@ -4,3 +4,7 @@ function change(i) {
     document.getElementById("chatwindowclick").style.display = "flex";
     
 }
+
+if (window.innerWidth < 500){
+    document.getElementById("header").style.display = "none";
+}
